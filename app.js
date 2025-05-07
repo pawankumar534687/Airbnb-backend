@@ -13,7 +13,8 @@ const port =  8000
 
 app.set("view engine", "ejs")
 app.use(cors({
-    origin: "http://localhost:5173" 
+    origin: "https://airbnb-frontend-ugoe.onrender.com",
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
