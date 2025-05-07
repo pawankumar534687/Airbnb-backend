@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% for(const allpost of allPosts) { %>
+        <img src="<%= allpost.image %>" alt="image">
+        <h2><%= allpost.title %></h2>
+        <p><%= allpost.description %></p>
+        <p><%= allpost.price %></p>
+        <p><%= allpost.location  %></p>
+        <p><%= allpost.country %></p>
+
+
+
+   <% } %>
+</body>
+</html>
