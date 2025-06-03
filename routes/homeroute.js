@@ -12,7 +12,7 @@ const upload = multer({ storage });
 const router = express.Router();
 
 // router.get("/saved-data", saveAllPosts)
-router.get("/show", authenticateToken, asyncWrap(showAllPost) )
+router.get("/show",  asyncWrap(showAllPost) )
 router.post("/create-post-form", authenticateToken, upload.single("image"), asyncWrap(createPost))
 router.get("/detailedpost/:id", authenticateToken, asyncWrap(detailedPost) )
 router.put("/edit/:id", authenticateToken, asyncWrap(PostEdit))
