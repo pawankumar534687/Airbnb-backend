@@ -9,8 +9,6 @@ import asyncWrap from "../utils/Asyncwrap.js";
 import multer from "multer";
 import { storage } from "../cloudcofig.js";
 const upload = multer({ storage });
-
-
 const router = express.Router();
 
 // router.get("/saved-data", saveAllPosts)
